@@ -4,7 +4,6 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const bodyParser = require("body-parser");
 dotenv.config();
-
 const app = express();
 
 // Middleware
@@ -13,6 +12,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // Database Connection
+
 mongoose
   .connect(process.env.MONGO_URI, {
     // useNewUrlParser: true,

@@ -5,7 +5,7 @@ export default axios.create({
   baseURL:
     environment !== "development"
       ? process.env.APP_URL
-      : "http://localhost:5000",
+      : "http://localhost:8888",
   headers: {
     "Content-type": "application/json",
   },
